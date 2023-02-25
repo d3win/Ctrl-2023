@@ -4,7 +4,7 @@ Public Class FRNOTASERVICIO
     Private Sub FRNOTASERVICIO_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 
-
+        'prueba
 
 
         'MsgBox(frmindex.slbfolio.Text)
