@@ -146,6 +146,7 @@ Public Class FRNNOTASERVICIOREIMPRESION
 
 
 
+        Me.ReportViewer1.RefreshReport()
     End Sub
 
     Private Sub FRNNOTASERVICIOREIMPRESION_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load

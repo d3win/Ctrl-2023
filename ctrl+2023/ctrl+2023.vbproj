@@ -48,9 +48,14 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common">
+      <HintPath>..\..\..\CTRLW11\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design">
+      <HintPath>..\..\..\CTRLW11\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.WinForms">
-      <HintPath>D:\CTRL+Y V16 OK URIEL\CTRLW1\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <HintPath>..\..\..\CTRLW11\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -238,6 +243,12 @@
       <DependentUpon>FRMNOTASERVICIOREIMPRESION.vb</DependentUpon>
     </Compile>
     <Compile Include="FRMNOTASERVICIOREIMPRESION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMNotaVenta.Designer.vb">
+      <DependentUpon>FRMNotaVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMNotaVenta.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRMNuevoproducto.Designer.vb">
@@ -470,6 +481,9 @@
     <EmbeddedResource Include="FRMNOTASERVICIOREIMPRESION.resx">
       <DependentUpon>FRMNOTASERVICIOREIMPRESION.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMNotaVenta.resx">
+      <DependentUpon>FRMNotaVenta.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMNuevoproducto.resx">
       <DependentUpon>FRMNuevoproducto.vb</DependentUpon>
     </EmbeddedResource>
@@ -508,6 +522,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRNOTAPRODUCTOSFALTANTESFILTRO.resx">
       <DependentUpon>FRNOTAPRODUCTOSFALTANTESFILTRO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRNOTASCORTE.resx">
+      <DependentUpon>FRNOTASCORTE.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRNOTASERVICIO.resx">
       <DependentUpon>FRNOTASERVICIO.vb</DependentUpon>
